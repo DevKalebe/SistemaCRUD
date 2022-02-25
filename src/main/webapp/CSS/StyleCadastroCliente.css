@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+.Section_Register {
+    width: 85%;
+    margin: 5.5em auto;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+.one-div-Register {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    background-color: #299C7D;
+}
+
+.one-div-Register h1 {
+    font-size: 2.7vw;
+    text-align: center;
+    white-space: pre-wrap;
+    padding: 1.1em 0.88em 0.5em;
+    color: #fff;
+}
+
+.Image_one_div {
+    margin-top: 3.7em;
+    text-align: center;
+}
+
+.one-div-Register button {
+    width: 50%;
+    text-align: center;
+    font-size: 1vw;
+    white-space: pre-wrap;
+    margin-top: 3.8em;
+    background: rgba(0, 104, 76, 0.5);
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.7em 2.8em;
+}
+
+.one-div-Register button:hover {
+	cursor: pointer;
+}
+
+.one-div-Register h4 {
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 1.7em;
+    color: #fff;
+}
+
+.two-div-Register {
+    width: 65%;
+    padding: 2.5em 0 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.two-div-Register h1 {
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 3.3vw;
+    color: #299C7D;
+}
+
+.two-div-Register form {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
+.two-div-Register label {
+    font-size: 1.1vw;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.div_input {
+    width: 80%;
+    position: relative;
+    margin: 2.55em auto;
+}
+
+.input_and_image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0.4em;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.349);
+}
+
+.input_and_image img {
+    width: 2.7%;
+    margin-right: 0.3em;
+    margin-left: 0.8em;
+}
+
+.Input-Forms {
+    margin-left: 1em;
+    background: none;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1vw;
+}
+
+.labelInput {
+    position: absolute;
+    margin-left: 1.1em;
+    top: 0;
+    left: 1.7em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Input-Forms:focus~label,
+.Input-Forms:valid~label {
+    top: -1.65em;
+    left: 2.5em;
+    font-size: 0.85vw;
+    color: #00CC76;
+}
+
+.div_radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_radio label {
+    font-size: 1.1vw;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.div_radio input {
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+input[type="radio"] {
+    background: rgba(0, 0, 0, 0.349);
+    margin-left: 0.5em;
+}
+
+.div_title_radio {
+    align-items: center;
+    margin-right: 5em;
+}
+
+.div_masculine_radio {
+    align-items: center;
+    margin-right: 5em;
+    padding-top: 0.45em;
+}
+
+.div_feminine_radio {
+    align-items: center;
+    padding-top: 0.8em;
+}
+
+#dataNascimento {
+    width: 100%;
+}
+
+.two-div-Register button {
+    margin-top: -1em;
+    font-size: 1vw;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 0.6em 1.5em;
+    color: #fff;
+    background: #299C7D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+/* styling the footer */
+
+.footer {
+    width: 100%;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.developed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developed p {
+    color: black;
+    font-size: 22px;
+}
+
+.developed img {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.developed img:hover {
+    cursor: pointer;
+}
+
+.p-footer {
+    color: #808080;
+    font-size: 14px;
+}
+
+
+/* start of responsiveness for computer screens */
+
+@media screen and (max-width: 1600px) {
+    .Section_Register {
+        margin: 5em auto;
+    }
+    .Image_one_div {
+        margin-top: 5em;
+    }
+    .one-div-Register button {
+        margin-top: 5em;
+    }
+    .footer {
+       
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .Section_Register {
+        margin: 5em auto;
+    }
+    .Image_one_div {
+        margin-top: 6em;
+    }
+    .one-div-Register button {
+        margin-top: 6em;
+    }
+    .footer {
+       
+        padding-bottom: 2em;
+    }
+}
+
+
+
+/* start of responsiveness for tablet and laptop screens */
+
+@media screen and (max-width: 1025px) {
+    .Section_Register {
+        display: table;
+    }
+    .one-div-Register {
+        width: 80%;
+        display: table-footer-group;
+    }
+    .two-div-Register {
+        width: 80%;
+        display: table-header-group;
+    }
+    .two-div-Register h1 {
+        font-size: 5vw;
+        padding-top: 0.5em;
+    }
+    .two-div-Register label {
+        font-size: 2.4vw;
+    }
+    .two-div-Register button {
+        font-size: 2vw;
+        margin: 0.1em 0 0.3em 0;
+    }
+    .div_input {
+        margin-top: 4em;
+    }
+    .labelInput {
+        margin-left: 1.1em;
+        left: 1.4em;
+    }
+    .Input-Forms:focus~label,
+    .Input-Forms:valid~label {
+        top: -1.65em;
+        left: 2.2em;
+        font-size: 1.8vw;
+    }
+    .Input-Forms {
+        margin-left: 1em;
+        background: none;
+        border: none;
+        outline: none;
+        color: #000;
+        font-size: 1.8vw;
+    }
+    .input_and_image img {
+        width: 4.5%;
+    }
+    .div_title_radio {
+        margin-right: 2em;
+    }
+    .div_masculine_radio {
+        margin-right: 2em;
+        padding-top: 0.2em;
+    }
+    .div_feminine_radio {
+        align-items: center;
+        padding-top: 0.2em;
+    }
+    .one-div-Register h1 {
+        display: none;
+    }
+    .one-div-Register img {
+        display: none;
+        margin: 0;
+    }
+    .one-div-Register button {
+        font-size: 2.5vw;
+        margin-top: -12em;
+        padding: 1em 0.2em;
+    }
+    .one-div-Register h4 {
+        font-size: 2vw;
+        margin: 1em auto;
+    }
+   
+}

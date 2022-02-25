@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: #299C7D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scroll {
+    overflow: auto;
+    width: 80%;
+    margin-top: 50px;
+    height: 500px;
+}
+
+.header {
+    /* position: absolute; */
+    background-color: #299C7D;
+    top: 125px;
+    width: 80%;
+    font-size: 25px;
+    color: #fff;
+}
+
+.header th {
+    font-weight: normal;
+    padding: 10px;
+}
+
+.linha, .linha2 {
+    width: 80%;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.linha td, linha2 td {
+    padding: 15px;
+}
+
+.linha2 {
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+/* Seção Botoes e forms */
+
+.botoes-forms {
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes button {
+    width: 250px;
+    margin: 0 40px;
+    border: none;
+    outline: none;
+    border-radius: 140px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #f0f0f03d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.5s;
+}
+
+.botoes button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(41, 156, 125, 0.6);
+}
+
+.forms {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms .form {
+    width: 400px;
+    margin: 0 40px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #f0f0f03d;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.25);
+   	opacity: 0;
+   	transition-duration: 1s;
+}
+
+.forms .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.form input {
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.500);
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.form input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.500);
+}
+
+.form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form button {
+    width: 200px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #299C7D;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 17px;
+    font-weight: 300;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Seção Estatisticas */
+
+.estatisticas {
+    width: 60%;
+    margin: 40px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.estatisticas-content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.estatisticas-content h1 {
+    font-size: 23px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.genero, .faixa-etaria, .periodo, .dias{
+    width: 370px;
+    margin: 0 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f03d;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.dias {
+    width: 700px;
+    margin: 50px auto 0 auto;
+}
+
+.est-tabela {
+    margin-top: 20px;  
+    border-collapse: collapse;
+}
+
+.est-header {
+    color: #fff;
+    background-color: #299C7D;
+}
+
+.est-header th {
+    padding: 5px 18px;
+}
+
+.est-linha {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.developed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developed p {
+    color: black;
+    font-size: 22px;
+}
+
+.developed img {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.developed img:hover {
+    cursor: pointer;
+}
+
+.p-footer {
+    color: #808080;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1440px) {
+    .tabela {
+        width: 1150px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .estatisticas-content {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .genero, .faixa-etaria, .periodo {
+        margin: 20px 0;
+    }
+
+    .dias {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .dias {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .est-scroll {
+        width: 90%;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .botoes-forms {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .botoes {
+        display: none;
+    }
+
+    .forms {
+        flex-direction: column;
+    }
+
+    .forms .form {
+        margin: 20px 40px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .estatisticas {
+        width: 95%;
+    }
+    .dias {
+        width: 370px;
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .botoes-forms {
+        width: 90%;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .forms .form {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:385px) {
+    .titulo {
+        font-size: 50px;
+    }
+
+    .estatisticas-content {
+        width: 99%;
+    }
+
+    .genero, .faixa-etaria, .periodo, .dias {
+        width: 100%;
+    }
+}
